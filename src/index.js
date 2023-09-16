@@ -162,4 +162,6 @@ BasicTrie.prototype.clear = function () {
   this.size = 0;
 };
 
-export { BasicTrie };
+module.exports = {
+  BasicTrie,
+};

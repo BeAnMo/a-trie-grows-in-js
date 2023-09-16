@@ -1,8 +1,8 @@
-import terser from '@rollup/plugin-terser';
+const terser = require('@rollup/plugin-terser');
 
-export default [
+module.exports = [
   {
-    input: 'src/index.mjs',
+    input: 'src/index.js',
     output: {
       file: 'dist/index.umd.js',
       format: 'umd',
@@ -10,7 +10,7 @@ export default [
     },
   },
   {
-    input: 'src/index.mjs',
+    input: 'src/index.js',
     output: {
       file: 'dist/index.umd.min.js',
       format: 'umd',
